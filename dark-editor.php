@@ -3,7 +3,7 @@
 Plugin Name: Dark Classic Editor
 Description: Dark Mode for Classic Editor / Post Edit Screens, including TinyMCE.
 Author: Elite Star Services
-Version: 1.2.0
+Version: 1.2.1
 */
 
 add_action('admin_enqueue_scripts', function($hook) {
@@ -97,6 +97,106 @@ add_action('admin_enqueue_scripts', function($hook) {
                 scrollbar-color: #444 #23272a;
                 scrollbar-width: thin;
             }
+            /* Form elements and buttons */
+            input, select, textarea, button {
+                background: #23272a !important;
+                color: #e8e6e3 !important;
+                border-color: #444 !important;
+            }
+            input:focus, select:focus, textarea:focus, button:focus {
+                background: #181a1b !important;
+                color: #fff !important;
+                border-color: #666 !important;
+            }
+            /* Specific for primary buttons */
+            .button-primary, .components-button.is-primary {
+                background: #444 !important;
+                color: #fff !important;
+                border-color: #666 !important;
+            }
+            .button-primary:hover, .components-button.is-primary:hover {
+                background: #666 !important;
+                color: #fff !important;
+            }
+            /* Checkbox and radio */
+            input[type="checkbox"], input[type="radio"] {
+                accent-color: #444;
+            }
+            /* Dropdown arrow color for select */
+            select {
+                color-scheme: dark;
+            }
+            /* Dark mode for Add New, Preview, and Previous Changes buttons */
+            .page-title-action,
+            .preview.button,
+            .preview.button.button-large,
+            .button.button-large,
+            .button-secondary,
+            .button-secondary:visited,
+            .button-secondary:active,
+            .button-secondary:focus,
+            .button-secondary:hover,
+            .button,
+            .button:visited,
+            .button:active,
+            .button:focus,
+            .button:hover,
+            .button-link,
+            .button-link:visited,
+            .button-link:active,
+            .button-link:focus,
+            .button-link:hover,
+            .submitdelete,
+            .submitdelete:visited,
+            .submitdelete:active,
+            .submitdelete:focus,
+            .submitdelete:hover,
+            /* Dark mode for Previous/Next post navigation buttons */
+            .adminpostnav-prev,
+            .adminpostnav-next,
+            /* Dark mode for "← Previous" and "Next →" navigation links */
+            #adminpostnav-prev,
+            #adminpostnav-next,
+            .add-new-h2#adminpostnav-prev,
+            .add-new-h2#adminpostnav-next {
+                background: #23272a !important;
+                color: #e8e6e3 !important;
+                border-color: #444 !important;
+            }
+            .page-title-action:hover,
+            .preview.button:hover,
+            .button.button-large:hover,
+            .button-secondary:hover,
+            .button:hover,
+            .button-link:hover,
+            .submitdelete:hover,
+            .adminpostnav-prev:hover,
+            .adminpostnav-next:hover,
+            #adminpostnav-prev:hover,
+            #adminpostnav-next:hover,
+            .add-new-h2#adminpostnav-prev:hover,
+            .add-new-h2#adminpostnav-next:hover {
+                background: #444 !important;
+                color: #fff !important;
+                border-color: #666 !important;
+            }
+            /* "Previous" and "Preview Changes" links in post updated message */
+            .post-php .updated a,
+            .post-php .updated a:visited,
+            .post-php .updated a:active,
+            .post-php .updated a:focus,
+            .post-php .updated a:hover {
+                background: #23272a !important;
+                color: #8ab4f8 !important;
+                border-color: #444 !important;
+                padding: 2px 8px;
+                border-radius: 3px;
+                text-decoration: none !important;
+            }
+            .post-php .updated a:hover {
+                background: #444 !important;
+                color: #fff !important;
+            }
         </style>';
     }
 });
@@ -118,6 +218,23 @@ add_filter('tiny_mce_before_init', function($init) {
         .mce-btn:hover, .mce-btn:focus, .mce-btn button:hover, .mce-btn button:focus {
             background: #181a1b !important;
             color: #fff !important;
+        }
+        input, select, textarea, button {
+            background: #23272a !important;
+            color: #e8e6e3 !important;
+            border-color: #444 !important;
+        }
+        input:focus, select:focus, textarea:focus, button:focus {
+            background: #181a1b !important;
+            color: #fff !important;
+            border-color: #666 !important;
+        }
+        /* Checkbox and radio */
+        input[type="checkbox"], input[type="radio"] {
+            accent-color: #444;
+        }
+        select {
+            color-scheme: dark;
         }
     ';
     if (isset($init['content_style'])) {

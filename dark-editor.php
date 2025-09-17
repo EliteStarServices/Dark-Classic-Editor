@@ -3,7 +3,7 @@
 Plugin Name: Dark Classic Editor
 Description: Simple Dark Mode for Classic Editor / Post Edit Screens.
 Author: Elite Star Services
-Version: 1.3.0
+Version: 1.4.0
 */
 
 add_action('admin_enqueue_scripts', function($hook) {
@@ -23,7 +23,7 @@ add_action('admin_enqueue_scripts', function($hook) {
             
             /* Main content areas */
             .wrap, .postbox, .inside {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 color: #e0e0e0 !important;
                 border-color: #444 !important;
             }
@@ -82,7 +82,7 @@ add_action('admin_enqueue_scripts', function($hook) {
             
             /* Editor wrapper */
             #wp-content-wrap, .wp-core-ui, .wp-editor-wrap {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 border-color: #555 !important;
             }
             
@@ -94,12 +94,12 @@ add_action('admin_enqueue_scripts', function($hook) {
             
             /* TinyMCE UI elements (mceu) */
             .mce-tinymce, .mce-container, .mce-panel {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 border-color: #555 !important;
             }
             
             .mce-toolbar, .mce-toolbar-grp {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 border-color: #555 !important;
             }
             
@@ -222,7 +222,7 @@ add_action('admin_enqueue_scripts', function($hook) {
             
             /* Editor toolbar container */
             .wp-editor-tools {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 border-color: #555 !important;
             }
             
@@ -264,7 +264,7 @@ add_action('admin_enqueue_scripts', function($hook) {
             
             /* Metabox headers */
             .postbox h2, .postbox h3, .hndle {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 color: #e0e0e0 !important;
                 border-color: #555 !important;
             }
@@ -300,31 +300,31 @@ add_action('admin_enqueue_scripts', function($hook) {
             }
             
             /* Publishing actions */
-            #major-publishing-actions, #minor-publishing-actions {
-                background: #2c2c2c !important;
+            #major-publishing-actions {
+                background: #1a1a1a !important;
                 border-color: #555 !important;
             }
             
             /* Publish box and sidebar */
             #submitdiv, #submitpost, .submitbox {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 color: #e0e0e0 !important;
                 border-color: #555 !important;
             }
             
             #minor-publishing, #minor-publishing-actions {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 border-color: #555 !important;
             }
             
             /* Post status and preview */
             #save-action, #preview-action, #misc-publishing-actions {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 color: #e0e0e0 !important;
             }
             
             .misc-pub-section {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 color: #e0e0e0 !important;
                 border-color: #555 !important;
             }
@@ -358,7 +358,7 @@ add_action('admin_enqueue_scripts', function($hook) {
             
             /* Categories and tags */
             .categorydiv .tabs-panel, .tagsdiv .tabs-panel {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 border-color: #555 !important;
             }
             
@@ -368,20 +368,20 @@ add_action('admin_enqueue_scripts', function($hook) {
             
             /* Category tabs styling based on actual HTML structure */
             #category-tabs {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 border-color: #555 !important;
             }
             
             /* Default state for tab buttons */
             #category-tabs li.tabs,
             #category-tabs li.hide-if-no-js {
-                background: #3c3c3c !important;
+                background: #1a1a1a !important;
                 border-color: #555 !important;
             }
             
             #category-tabs li.tabs a,
             #category-tabs li.hide-if-no-js a {
-                background: #3c3c3c !important;
+                background: #1a1a1a !important;
                 color: #e0e0e0 !important;
                 text-decoration: none !important;
             }
@@ -389,12 +389,12 @@ add_action('admin_enqueue_scripts', function($hook) {
             /* Hover states */
             #category-tabs li.tabs:hover,
             #category-tabs li.hide-if-no-js:hover {
-                background: #4c4c4c !important;
+                background: #222 !important;
             }
             
             #category-tabs li.tabs:hover a,
             #category-tabs li.hide-if-no-js:hover a {
-                background: #4c4c4c !important;
+                background: #222 !important;
                 color: #fff !important;
             }
             
@@ -416,7 +416,7 @@ add_action('admin_enqueue_scripts', function($hook) {
             
             /* Target the tab content itself when active */
             .categorydiv .tabs-panel.tabs-panel-active {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 color: #e0e0e0 !important;
                 border-color: #555 !important;
             }

@@ -448,6 +448,43 @@ add_action('admin_enqueue_scripts', function($hook) {
             a:hover {
                 color: #9ec9ec !important;
             }
+            
+            /* Help tab and content */
+            #contextual-help-wrap {
+                background: #2c2c2c !important;
+                color: #e0e0e0 !important;
+                border-color: #555 !important;
+            }
+            
+            #contextual-help-back {
+                background: #2c2c2c !important;
+                color: #e0e0e0 !important;
+            }
+            
+            .contextual-help-tabs .active {
+                background: #1a1a1a !important;
+                border-color: #555 !important;
+                color: #fff !important;
+            }
+            
+            .contextual-help-tabs li {
+                border-color: #555 !important;
+            }
+            
+            .contextual-help-tabs a {
+                color: #e0e0e0 !important;
+                background: #3c3c3c !important;
+            }
+            
+            .contextual-help-tabs a:hover {
+                background: #4c4c4c !important;
+                color: #fff !important;
+            }
+            
+            .help-tab-content {
+                background: #1a1a1a !important;
+                color: #e0e0e0 !important;
+            }
         </style>';
     }
 });

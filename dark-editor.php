@@ -81,7 +81,7 @@ add_action('admin_enqueue_scripts', function($hook) {
             }
             
             /* Editor wrapper */
-            #wp-content-wrap, .wp-core-ui, .wp-editor-wrap {
+            #wp-content-wrap, .wp-core-ui, .wp-editor-wrap, .mce-toolbar, .mce-toolbar-grp {
                 background: #1a1a1a !important;
                 border-color: #555 !important;
             }
@@ -98,8 +98,9 @@ add_action('admin_enqueue_scripts', function($hook) {
                 border-color: #555 !important;
             }
             
-            .mce-toolbar, .mce-toolbar-grp {
-                background: #1a1a1a !important;
+            .mce-ico {
+                background: #80878e !important;
+                color: #222 !important;
                 border-color: #555 !important;
             }
             
@@ -155,7 +156,7 @@ add_action('admin_enqueue_scripts', function($hook) {
             
             /* Media buttons */
             #wp-content-media-buttons, .wp-media-buttons {
-                background: #2c2c2c !important;
+                background: #1a1a1a !important;
                 border-color: #555 !important;
             }
             

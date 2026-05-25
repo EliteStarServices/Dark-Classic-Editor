@@ -1,6 +1,6 @@
 # Dark Classic Editor
 
-**Dark Classic Editor** is a ClassicPress plugin that enables a dark mode for the Classic Editor and post edit screens, including TinyMCE.
+**Dark Classic Editor** is a ClassicPress plugin that enables a dark mode for the Classic Editor and post edit screens.
 
 ## Features
 
